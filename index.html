@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap:300,400,600" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="img/jpg" href="img/flowers.jpg">
     <title>Holiday Finder &ndash; Your all-in-one booking app</title>
@@ -11,13 +12,35 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header__logo">Logo</div>
-            <div class="header__search">Search</div>
-            <div class="header__logos">
-                <div class="badge">icon</div>
-                <div class="messages">icon</div>
-                <div class="profile">icon</div>
-            </div>
+            <img class="logo" src="img/flowers.jpg" alt="flower logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" name="search" placeholder="Search Hotels">
+                <button class="search__btn-search">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-navigation">
+                <div class="user-navigation__icon-box">
+                    <svg class="user-navigation__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+                    </svg>
+                    <span class="user-navigation__notification">5</span>
+                </div>
+                <div class="user-navigation__icon-box">
+                    <svg class="user-navigation__icon">
+                        <use xlink:href="img/sprite.svg#icon-bubbles3"></use>
+                    </svg>
+                    <span class="user-navigation__notification">5</span>
+                </div>
+                <div class="user-navigation__icon-box">
+                    <svg class="user-navigation__icon-user">
+                        <use xlink:href="img/sprite.svg#icon-user"></use>
+                    </svg>
+                    <span class="user-navigation__user-name">User Name</span>
+                </div>
+            </nav>
         </header>
         <div class="content-container">
             <nav class="navigation">
