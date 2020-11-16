@@ -34,6 +34,67 @@ body {
   line-height: 1.6;
   min-height: 100vh; }
 
+.logo {
+  margin-left: 3rem;
+  max-height: 100%; }
+
+.search {
+  background: darkolivegreen;
+  flex: 0 0 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    background: var(--color-grey-light-2);
+    border: none;
+    border-radius: 100px;
+    padding: .7rem 2rem;
+    width: 90%;
+    margin-right: -3rem;
+    transition: all .2s; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background: var(--color-grey-light-3); }
+  .search__input:focus + .search__btn-search {
+    background: var(--color-grey-light-3); }
+  .search__input::-moz-placeholder {
+    color: var(--color-grey-light-4);
+    font-weight: 100; }
+  .search__input::-webkit-input-placeholder {
+    color: var(--color-grey-light-4);
+    font-weight: 100; }
+  .search__btn-search {
+    border: none;
+    background: var(--color-grey-light-2); }
+    .search__btn-search:focus {
+      outline: none;
+      transform: translateY(2px); }
+  .search__icon {
+    fill: var(--color-grey-dark-3);
+    height: 2rem;
+    width: 2rem; }
+
+.user-navigation {
+  align-self: flex-end;
+  display: flex;
+  max-height: 100%;
+  background: darkgoldenrod; }
+  .user-navigation__icon-box {
+    height: 90%; }
+  .user-navigation__icon {
+    height: 2.5rem;
+    width: 2.5rem; }
+  .user-navigation__icon-user {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem; }
+
 .container {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
@@ -44,9 +105,13 @@ body {
   flex-direction: column; }
 
 .header {
-  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #def1d3;
   border-bottom: 2px solid var(--color-grey-light-2);
-  height: 7rem; }
+  height: 7rem;
+  font-size: 1.4rem; }
 
 .content-container {
   display: flex;
