@@ -43,23 +43,57 @@
             </nav>
         </header>
         <div class="content-container">
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Item</a>
+            <nav class="sidebar">
+                <ul class="side-navigation">
+                    <li class="side-navigation__item side-navigation__item--active">
+                        <a href="#" class="side-navigation__link">
+                            <svg class="side-navigation__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span class="side-navigation__name">Hotel</span>
+                        </a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Item</a>
+                    <li class="side-navigation__item">
+                        <a href="#" class="side-navigation__link">
+                            <svg class="side-navigation__icon">
+                                <use xlink:href="img/sprite.svg#icon-airplane"></use>
+                            </svg>
+                            <span class="side-navigation__name"> Flight</span> 
+                        </a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Item</a>
+                    <li class="side-navigation__item">
+                        <a href="#" class="side-navigation__link">
+                            <svg class="side-navigation__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span class="side-navigation__name">Car Rental</span> 
+                        </a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Item</a>
+                    <li class="side-navigation__item">
+                        <a href="#" class="side-navigation__link">
+                            <svg class="side-navigation__icon">
+                                <use xlink:href="img/sprite.svg#icon-map2"></use>
+                            </svg>
+                            <span class="side-navigation__name">Tours</span> 
+                        </a>
                     </li>
                 </ul>
+                <div class="legal">
+                    &copy; 2020 by Trillo. All rights reserved.
+                </div>
             </nav>
             <main class="hotel-view">
+                <div class="gallery">
+                    <figure class="gallery__item">
+                        <img src="img/hotel-room.jpg" alt="hotel room" class="gallery__photo"> 
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/hotel-bar.jpg" alt="hotel bar" class="gallery__photo">
+                    </figure>
+                    <figure class="gallery__item">
+                        <img src="img/pool.jpg" alt="pool" class="gallery__photo">
+                    </figure>
+                </div>
                 <h2>Hotel View</h2>
             </main>
         </div>
