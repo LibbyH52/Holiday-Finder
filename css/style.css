@@ -246,6 +246,53 @@ body {
 .user-review {
   flex: 1; }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  border-top: var(--line);
+  border-bottom: var(--line);
+  list-style: none;
+  margin: 3rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+  .list__item::before {
+    content: "";
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: .7rem;
+    background: var(--color-primary);
+    -o-mask-image: url("../img/circle-right.svg");
+    -ms-mask-image: url("../img/circle-right.svg");
+    -webkit-mask-image: url("../img/circle-right.svg");
+    mask-image: url("../img/circle-right.svg");
+    -ms-mask-size: cover;
+    -o-mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-size: cover; }
+
+.recommend {
+  color: var(--color-grey-dark-3);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center; }
+  .recommend__count {
+    margin-right: auto; }
+  .recommend__photo {
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -2rem; }
+
 @keyframes pulsate {
   0% {
     transform: scale(1);
