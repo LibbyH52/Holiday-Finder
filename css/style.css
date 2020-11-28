@@ -315,15 +315,20 @@ body {
     height: 1.2rem;
     width: 1.2rem;
     margin-right: .7rem;
-    background: var(--color-primary);
-    -o-mask-image: url("../img/circle-right.svg");
-    -ms-mask-image: url("../img/circle-right.svg");
-    -webkit-mask-image: url("../img/circle-right.svg");
-    mask-image: url("../img/circle-right.svg");
-    -ms-mask-size: cover;
-    -o-mask-size: cover;
-    -webkit-mask-size: cover;
-    mask-size: cover; }
+    background-image: url("../img/circle-right.svg");
+    background-size: cover; }
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      .list__item::before {
+        background: var(--color-primary);
+        -o-mask-image: url("../img/circle-right.svg");
+        -ms-mask-image: url("../img/circle-right.svg");
+        -webkit-mask-image: url("../img/circle-right.svg");
+        mask-image: url("../img/circle-right.svg");
+        -ms-mask-size: cover;
+        -o-mask-size: cover;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        background-image: none; } }
 
 .recommend {
   color: var(--color-grey-dark-3);
