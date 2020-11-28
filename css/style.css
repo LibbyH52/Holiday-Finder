@@ -42,6 +42,9 @@ body {
 .logo {
   margin-left: 2rem;
   max-height: 100%; }
+  @media only screen and (max-width: 31.25em) {
+    .logo {
+      max-height: 50%; } }
 
 .search {
   flex: 0 0 40%;
@@ -49,6 +52,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      background: var(--color-grey-light-2);
+      flex: 0 0 100%;
+      order: 1; } }
   .search__input {
     color: inherit;
     font-family: inherit;
@@ -167,11 +175,22 @@ body {
       .side-navigation__link:link, .side-navigation__link:visited {
         justify-content: center;
         padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-navigation__link:link, .side-navigation__link:visited {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem .5rem; } }
   .side-navigation__icon {
     fill: currentColor;
     margin-right: 2rem;
     height: 2rem;
     width: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .side-navigation__icon {
+        margin-right: 0;
+        margin-bottom: .7rem;
+        height: 1.5rem;
+        width: 1.5rem; } }
 
 .legal {
   color: var(--color-grey-light-4);
@@ -198,6 +217,10 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .hotel-info__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .hotel-info__stars {
     margin-right: auto;
     display: flex; }
@@ -221,13 +244,22 @@ body {
     color: #f1f1f1;
     margin-left: 3rem;
     padding: 0 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .hotel-info__rating {
+        padding: 0 1.5rem; } }
   .hotel-info__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .hotel-info__rating-average {
+        font-size: 1.8rem; } }
   .hotel-info__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .hotel-info__rating-count {
+        font-size: .5rem; } }
   .hotel-info__icon-location {
     width: 2rem;
     height: 2rem; }
@@ -269,11 +301,14 @@ body {
   margin: 3rem 0;
   padding: 2rem;
   display: flex;
-  flex-wrap: wrap;
-  align-items: space-between; }
+  flex-wrap: wrap; }
   .list__item {
     flex: 0 0 50%;
     margin-bottom: .7rem; }
+    @media only screen and (max-width: 31.25em) {
+      .list__item {
+        flex: 0 0 75%;
+        margin: 0 auto; } }
   .list__item::before {
     content: "";
     display: inline-block;
@@ -436,6 +471,11 @@ body {
   border-bottom: var(--line);
   height: 7rem;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      align-content: space-around;
+      flex-wrap: wrap;
+      height: 11rem; } }
 
 .content-container {
   display: flex;
@@ -469,6 +509,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   flex: 0 0 60%;
@@ -481,3 +524,7 @@ body {
     .description {
       padding: 2rem;
       margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
